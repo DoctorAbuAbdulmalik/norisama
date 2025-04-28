@@ -1,0 +1,46 @@
+body {
+  background-image: url('./images/temnyy-fon.jpg');
+  background-size: cover; /* Заставит изображение растягиваться на весь экран */
+  background-position: center center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Отключает повторение изображения */
+}
+
+.banner {
+  background-image: url('./images/bg.jpg');
+  background-size: cover; /* Заставит изображение растягиваться на весь экран */
+  background-position: center center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Отключает повторение изображения */
+}
+
+
+/* Стили для контейнера карточек */
+.card-container {
+  scroll-behavior: smooth; /* Плавная прокрутка */
+  -webkit-overflow-scrolling: touch; /* Поддержка плавной прокрутки на iOS */
+  scrollbar-width: none; /* Скрываем скроллбар в Firefox */
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; /* Скрываем скроллбар в Chrome/Safari */
+}
+
+/* Стили для кнопок-стрелок */
+.arrow-left,
+.arrow-right {
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: #b91c1c; /* Темнее при наведении */
+}
+
+/* Убедимся, что карточки не сжимаются */
+.card-container > div {
+  flex-shrink: 0; /* Карточки сохраняют ширину */
+}
+
+
+
+

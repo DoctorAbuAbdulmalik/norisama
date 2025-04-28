@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoriSama — Суши доставка</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Header -->
+    <header class="p-4 flex justify-between items-center shadow">
+      <div class="text-2xl font-bold text-white">NoriSama</div>
+      <div class="hidden md:block text-lg text-white">
+        Свежие роллы за 30 минут
+      </div>
+      <a
+        href="tel:+79991234567"
+        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+        >Позвонить</a
+      >
+    </header>
+
+    <!-- Banner -->
+    <section class="text-white text-center p-8">
+      <!-- <h1 class="text-3xl mb-4">2+1 на сеты!</h1>
+      <p class="mb-6">Бесплатная доставка от 1000₽</p>
+      <a href="#menu" class="bg-red-500 px-6 py-3 rounded hover:bg-red-700"
+        >Смотреть меню</a
+      > -->
+
+      <div class="relative w-full h-[300px] md:h-[400px]">
+        <img
+          src="./images/bg.jpg"
+          alt="Акция: 2+1 на сеты"
+          class="object-cover w-full h-full absolute inset-0 z-0"
+        />
+
+        <div
+          class="absolute bottom-0 w-full flex flex-col items-center justify-center text-white text-center z-10 py-4"
+        >
+          <h2 class="text-2xl font-bold">2+1 на сеты</h2>
+          <p class="mb-6">Бесплатная доставка от 1000₽</p>
+          <a href="#menu" class="bg-red-500 px-6 py-3 rounded hover:bg-red-700">
+            Смотреть меню
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <main id="menu" class="p-8">
+      <h2 class="text-2xl font-bold mb-6 text-white text-center">Наше меню</h2>
+
+      <!-- Категории -->
+      <section class="mb-10">
+        <!-- <h3 class="text-xl font-bold mb-4 text-white">Сеты</h3> -->
+  <!-- <div class="relative"> -->
+    <!-- Контейнер для прокрутки -->
+    <!-- <div class="card-container flex overflow-x-auto scroll-smooth gap-6 pb-4"> -->
+      <!-- Карточки (оставляем как есть) -->
+      <!-- <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col min-w-[250px]">
+        <img src="images/set1.jpg" alt="Сет 1" class="w-full h-48 object-cover" />
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="text-lg font-semibold mb-4 min-h-[48px]">Сет "Суши для двоих"</h4>
+          <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+            Классические роллы, соус, васаби и имбирь.
+          </p>
+          <div class="mt-auto">
+            <p class="font-bold text-red-600">799₽</p>
+            <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700" onclick="openOrderModal()">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+      
+      
+      <!-- <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col min-w-[250px]">
+        <img src="images/set1.jpg" alt="Сет 1" class="w-full h-48 object-cover" />
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="text-lg font-semibold mb-4 min-h-[48px]">Сет "Суши для двоих"</h4>
+          <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+            Классические роллы, соус, васаби и имбирь.
+          </p>
+          <div class="mt-auto">
+            <p class="font-bold text-red-600">799₽</p>
+            <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700" onclick="openOrderModal()">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col min-w-[250px]">
+        <img src="images/set1.jpg" alt="Сет 1" class="w-full h-48 object-cover" />
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="text-lg font-semibold mb-4 min-h-[48px]">Сет "Суши для двоих"</h4>
+          <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+            Классические роллы, соус, васаби и имбирь.
+          </p>
+          <div class="mt-auto">
+            <p class="font-bold text-red-600">799₽</p>
+            <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700" onclick="openOrderModal()">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col min-w-[250px]">
+        <img src="images/set1.jpg" alt="Сет 1" class="w-full h-48 object-cover" />
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="text-lg font-semibold mb-4 min-h-[48px]">Сет "Суши для двоих"</h4>
+          <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+            Классические роллы, соус, васаби и имбирь.
+          </p>
+          <div class="mt-auto">
+            <p class="font-bold text-red-600">799₽</p>
+            <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700" onclick="openOrderModal()">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col min-w-[250px]">
+        <img src="images/set1.jpg" alt="Сет 1" class="w-full h-48 object-cover" />
+        <div class="p-4 flex flex-col flex-grow">
+          <h4 class="text-lg font-semibold mb-4 min-h-[48px]">Сет "Суши для двоих"</h4>
+          <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+            Классические роллы, соус, васаби и имбирь.
+          </p>
+          <div class="mt-auto">
+            <p class="font-bold text-red-600">799₽</p>
+            <button class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700" onclick="openOrderModal()">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div> -->
+      <!-- Другие карточки (аналогично) -->
+    <!-- </div> -->
+    <!-- Кнопки-стрелки -->
+    <!-- <button class="arrow-left absolute top-1/2 -left-4 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 hidden">
+      &larr;
+    </button>
+    <button class="arrow-right absolute top-1/2 -right-4 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 hidden">
+      &rarr;
+    </button>
+  </div> -->
+
+  <h3 class="text-xl font-bold mb-4 text-white">Сеты</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div
+    class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+  >
+    <img
+      src="images/set1.jpg"
+      alt="Сет 1"
+      class="w-full h-48 object-cover"
+    />
+    <div class="p-4 flex flex-col flex-grow">
+      <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+        Сет "Суши для двоих"
+      </h4>
+      <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+        Классические роллы, соус, васаби и имбирь.
+      </p>
+      <div class="mt-auto">
+        <p class="font-bold text-red-600">799₽</p>
+        <button
+          class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+          onclick="openOrderModal()"
+        >
+          Заказать
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+  >
+    <img
+      src="images/set2.webp"
+      alt="Сет 2"
+      class="w-full h-48 object-cover"
+    />
+    <div class="p-4 flex flex-col flex-grow">
+      <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+        Сет "Японский стиль"
+      </h4>
+      <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+        Сет с запечёнными роллами и горячими блюдами.
+      </p>
+      <div class="mt-auto">
+        <p class="font-bold text-red-600">999₽</p>
+        <button
+          class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+          onclick="openOrderModal()"
+        >
+          Заказать
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+  >
+    <img
+      src="images/set3.jpg"
+      alt="Сет 3"
+      class="w-full h-48 object-cover"
+    />
+    <div class="p-4 flex flex-col flex-grow">
+      <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+        Сет "Вегетарианский"
+      </h4>
+      <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+        Свежие овощи, рис и соевый соус.
+      </p>
+      <div class="mt-auto">
+        <p class="font-bold text-red-600">649₽</p>
+        <button
+          class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+          onclick="openOrderModal()"
+        >
+          Заказать
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+  class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+>
+  <img
+    src="images/set3.jpg"
+    alt="Сет 3"
+    class="w-full h-48 object-cover"
+  />
+  <div class="p-4 flex flex-col flex-grow">
+    <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+      Сет "Вегетарианский"
+    </h4>
+    <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+      Свежие овощи, рис и соевый соус.
+    </p>
+    <div class="mt-auto">
+      <p class="font-bold text-red-600">649₽</p>
+      <button
+        class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+        onclick="openOrderModal()"
+      >
+        Заказать
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-xl font-bold mb-4 text-white">Классические роллы</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Карточка товара -->
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="images/roll1.webp"
+              alt="Сет 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+                Ролл "Филадельфия копчёный лосось"
+              </h4>
+              <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+                <b>Состав:</b> лосось х/к, огурец, сыр Cremette.
+              </p>
+              <p class="font-bold text-red-600">799₽</p>
+              <button
+                class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+                onclick="openOrderModal()"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+
+          <!-- Карточка товара -->
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="images/roll2.jpg"
+              alt="Сет 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+                Классические роллы с огурцом
+              </h4>
+              <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+                <b>Состав:</b> рис, нори, огурец, имбирь, васаби, соевый соус.
+              </p>
+              <p class="font-bold text-red-600">999₽</p>
+              <button
+                class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+                onclick="openOrderModal()"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+
+          <!-- Карточка товара -->
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="images/roll3.jpeg"
+              alt="Сет 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+                Фудзи ролл
+              </h4>
+              <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+                <b>Состав:</b> угорь, лосось, такуан, сливочный сыр, соус унаги,
+                миндальные лепестки, рис, нори
+              </p>
+              <p class="font-bold text-red-600">649₽</p>
+              <button
+                class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+                onclick="openOrderModal()"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+
+          <!-- Карточка товара -->
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+          >
+            <img
+              src="images/roll4.jpg"
+              alt="Сет 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-lg font-semibold mb-4 min-h-[48px]">
+                Ролл из камчатского краба
+              </h4>
+              <p class="text-sm text-gray-600 mb-2 min-h-[56px]">
+                <b>Состав:</b> рис для суши, краб камчатский, нори
+              </p>
+              <p class="font-bold text-red-600">649₽</p>
+              <button
+                class="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700"
+                onclick="openOrderModal()"
+              >
+                Заказать
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-xl mb-4 text-white">Запечённые роллы</h3>
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-xl mb-4 text-white">Горячие блюда</h3>
+      </section>
+    </main>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="relative bg-center bg-cover text-white p-8 min-h-[500px]"
+      style="background-image: url('images/sushi-chef.jpg')"
+    >
+      <div class="bg-black bg-opacity-50 p-8 rounded-lg max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">О нас</h2>
+        <p class="mb-4">
+          Мы используем только свежие продукты, готовим с любовью и доставляем
+          за 30 минут! Наш шеф-повар — мастер японской кухни.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <footer class="bg-black text-white p-8">
+      <h2 class="text-2xl font-bold mb-4">Контакты</h2>
+      <p class="mb-2">
+        Телефон:
+        <a href="tel:+79991234567" class="underline">+7 (999) 123-45-67</a>
+      </p>
+      <p class="mb-2">
+        Telegram:
+        <a href="https://t.me/yourtelegram" class="underline">@yourtelegram</a>
+      </p>
+      <p class="mb-2">
+        WhatsApp:
+        <a href="https://wa.me/79991234567" class="underline">Написать</a>
+      </p>
+      <p class="mb-2">Время работы: с 10:00 до 23:00</p>
+      <p>Адрес: г. Москва, ул. Примерная, 1</p>
+    </footer>
+
+    <!-- Модалка для заказа (будем добавлять позже через JS) -->
+  </body>
+</html>
